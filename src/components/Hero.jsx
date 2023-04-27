@@ -23,7 +23,7 @@ const Hero = () => {
 
   return (
     <div
-      className="bg-[url('https://cdn.pixabay.com/photo/2022/03/01/02/51/galaxy-7040416_960_720.png')]
+    className="bg-[url('https://github.com/Daltonic/adulamNFT/blob/main/src/assets/owner.png')]
         bg-no-repeat bg-cover"
     >
       <div className="flex flex-col justify-center items-center mx-auto py-10">
@@ -54,8 +54,8 @@ const Hero = () => {
             <img
               className="w-11 h-11 object-contain rounded-full"
               src={avatar}
-              alt="Adulam Logo"
-            />
+              alt=""
+            /> 
             <div className="flex flex-col font-semibold">
               <span className="text-white text-sm">0xf55...146a</span>
               <span className="text-[#e32970] text-xs">Daltonic</span>
@@ -63,8 +63,7 @@ const Hero = () => {
           </a>
 
           <p className="text-white text-sm font-medium text-center">
-            Gospel Darlington kick-started his journey as a software engineer in
-            2016. <br /> Over the years, he has grown full-blown skills in
+           proyecto mmonpork <br /> Over the years, he has grown full-blown skills in
             JavaScript stacks such as <br /> React, ReactNative, VueJs, and now
             blockchain.
           </p>
@@ -72,31 +71,31 @@ const Hero = () => {
           <ul className="flex flex-row justify-center space-x-2 items-center my-4">
             <a
               className="bg-white hover:scale-50 transition-all duration-75 delay-75 rounded-full mx-2"
-              href="https://github.com/Daltonic"
+              href=""
             >
               <img className="w-7 h-7" src={github} alt="Github" />
             </a>
             <a
               className="bg-white hover:scale-50 transition-all duration-75 delay-75 rounded-full mx-2"
-              href="https://www.linkedin.com/in/darlington-gospel-aa626b125"
+              href=""
             >
               <img className="w-7 h-7" src={linkedIn} alt="linkedIn" />
             </a>
             <a
               className="bg-white hover:scale-50 transition-all duration-75 delay-75 rounded-full mx-2"
-              href="https://fb.com/darlington.gospel01"
+              href=""
             >
               <img className="w-7 h-7" src={facebook} alt="facebook" />
             </a>
             <a
               className="bg-white hover:scale-50 transition-all duration-75 delay-75 rounded-full mx-2"
-              href="https://twitter.com/idaltonic"
+              href=""
             >
               <img className="w-7 h-7" src={twitter} alt="twitter" />
             </a>
             <a
               className="bg-white hover:scale-50 transition-all duration-75 delay-75 rounded-full mx-2"
-              href="https://darlingtongospel.medium.com/"
+              href=""
             >
               <img className="w-7 h-7" src={medium} alt="medium" />
             </a>

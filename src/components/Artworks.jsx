@@ -18,7 +18,7 @@ const Artworks = ({ artworks }) => {
   return (
     <div className="bg-[#131835] py-10">
       <div className="w-4/5 mx-auto">
-        <h4 className="text-gradient uppercase text-2xl">Artworks</h4>
+        <h4 className="text-gradient uppercase text-2xl">RocketPork</h4>
 
         <div className="flex flex-wrap justify-center items-center mt-4">
           {nfts.map((nft, i) => (

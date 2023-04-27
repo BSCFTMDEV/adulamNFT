@@ -10,8 +10,8 @@ contract Adulam is ERC721Enumerable, Ownable {
     string baseURI;
     string public baseExtension = ".json";
     string public baseImage = ".webp";
-    uint256 public cost = 0.001 ether;
-    uint256 public maxSupply = 99;
+    uint256 public cost = 0.02 ether;
+    uint256 public maxSupply = 10000;
     bool public paused = false;
 
     event Sale(
