@@ -23,7 +23,7 @@ const Hero = () => {
 
   return (
     <div
-    className="bg-[url('https://github.com/Daltonic/adulamNFT/blob/main/src/assets/owner.png')]
+    className="bg-[url('https://github.com/BSCFTMDEV/adulamNFT/blob/1c8a41c7893598507b45ed577e3cbd7ab1e2437a/src/assets/owner.png')]
         bg-no-repeat bg-cover"
     >
       <div className="flex flex-col justify-center items-center mx-auto py-10">
