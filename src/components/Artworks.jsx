@@ -1,4 +1,4 @@
-import ethlogo from '../assets/ethlogo.png'
+import ethereum from '../assets/ethereum.png'
 import { useEffect, useState } from 'react'
 
 const Artworks = ({ artworks }) => {
@@ -16,9 +16,9 @@ const Artworks = ({ artworks }) => {
   }, [artworks, end])
 
   return (
-    <div className="bg-[#131835] py-10">
-      <div className="w-4/5 mx-auto">
-        <h4 className="text-gradient uppercase text-2xl">RocketPork</h4>
+    <div className="bg-content-section py-10">
+      <div className="w-5/5 mx-auto">
+        <h4 className="text-gradient align-top text-center text-4xl">Collection Porks</h4>
 
         <div className="flex flex-wrap justify-center items-center mt-4">
           {nfts.map((nft, i) => (
@@ -37,14 +37,14 @@ const Artworks = ({ artworks }) => {
                   flex flex-row justify-between items-center
                   label-gradient p-2 w-full text-white text-sm"
               >
-                <p>{`Adulam NFT #${nft.id}`}</p>
+                <p>{`RocketPork NFT #${nft.id}`}</p>
                 <div className="flex justify-center items-center space-x-2">
                   <img
                     className="w-5 cursor-pointer"
-                    src={ethlogo}
-                    alt={`Adulam NFT collection #` + nft.id}
+                    src={ethereum}
+                    alt={`rocket pork NFT collection #` + nft.id}
                   />
-                  {nft.cost}
+                 
                 </div>
               </div>
             </a>
@@ -54,9 +54,7 @@ const Artworks = ({ artworks }) => {
         {artworks.length > 0 && artworks.length > nfts.length ? (
           <div className="flex flex-row justify-center items-center mx-auto mt-4">
             <button
-              className="shadow-xl shadow-black text-white
-              bg-[#e32970] hover:bg-[#bd255f] p-2
-              rounded-full cursor-pointer my-4"
+              className="bg-transparent hover:bg-transparent text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
               onClick={() => setEnd(end + count)}
             >
               Load more

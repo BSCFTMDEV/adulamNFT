@@ -1,5 +1,5 @@
 {
-  "name": "Adulam",
+  "name": "adulam",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -9,10 +9,10 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "@nomiclabs/hardhat-ethers": "^2.1.0",
-    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@usedapp/core": "^1.2.9",
+    "axios": "^1.4.0",
     "ethereum-waffle": "^3.4.4",
-    "ethers": "^5.6.9",
+    "ethers": "^5.7.2",
     "hardhat": "^2.10.1",
     "ipfs-http-client": "^57.0.3",
     "moment": "^2.29.4",

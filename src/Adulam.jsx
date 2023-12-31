@@ -1,14 +1,15 @@
-import abi from './abis/src/contracts/Adulam.sol/Adulam.json'
-import address from './abis/contractAddress.json'
+import abi from './abis/Adulam.json';
+import address from './abis/contractAddress.json';
 import { getGlobalState, setGlobalState } from './store'
 import { ethers } from 'ethers'
+
 
 const { ethereum } = window
 const contractAddress = address.address
 const contractAbi = abi.abi
 const opensea_uri = `https://testnets.opensea.io/assets/goerli/${contractAddress}/`
 
-const getEtheriumContract = () => {
+const getEthereumContract = () => {
   const connectedAccount = getGlobalState('connectedAccount')
 
   if (connectedAccount) {
@@ -57,17 +58,20 @@ const connectWallet = async () => {
   }
 }
 
-const payToMint = async () => {
+const payToMint = async (quantity) => {
   try {
     if (!ethereum) return alert('Please install Metamask')
     const connectedAccount = getGlobalState('connectedAccount')
-    const contract = getEtheriumContract()
-    const amount = ethers.utils.parseEther('0.001')
+    const contract = getEthereumContract()
+    const amount = ethers.utils.parseEther("0.02")
 
-    await contract.payToMint({
-      from: connectedAccount,
-      value: amount._hex,
-    })
+    for (let i = 0; i < quantity; i++) {
+      const tx = await contract.payToMint({
+        from: connectedAccount,
+        value: amount._hex,
+      })
+      await tx.wait()
+    }
 
     window.location.reload()
   } catch (error) {
@@ -79,7 +83,7 @@ const loadNfts = async () => {
   try {
     if (!ethereum) return alert('Please install Metamask')
 
-    const contract = getEtheriumContract()
+    const contract = getEthereumContract()
     const nfts = await contract.getAllNFTs()
 
     setGlobalState('nfts', structuredNfts(nfts))
@@ -104,10 +108,14 @@ const structuredNfts = (nfts) =>
       timestamp: new Date(nft.timestamp.toNumber()).getTime(),
     }))
     .reverse()
+    
+    
+   
 
-export { 
-  isWallectConnected, 
-  connectWallet, 
-  payToMint, 
-  loadNfts 
-}
+    export { 
+      isWallectConnected, 
+      connectWallet, 
+      payToMint, 
+      loadNfts,
+   
+    }

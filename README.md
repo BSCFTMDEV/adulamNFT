@@ -47,7 +47,7 @@ Questions about running the demo? [Open an issue](https://github.com/Daltonic/ad
 
 ## Useful links
 
-- 🏠 [Website](https://daltonic.github.io/)
+
 - ⚽ [Metamask](https://metamask.io/)
 - 🚀 [Remix Editor](https://remix.ethereum.org/)
 - 💡 [Hardhat](https://hardhat.org/)

@@ -4,8 +4,8 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      display: ['Open Sans', 'sans-serif'],
-      body: ['Open Sans', 'sans-serif'],
+      display: ['Bruno Ace SC', 'cursive'],
+      body: ['Bruno Ace SC', 'cursive'],
     },
     extend: {
       screens: {
